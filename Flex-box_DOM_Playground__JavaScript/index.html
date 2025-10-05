@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div > div {
+        width: 100px;
+        height: 100px;
+        border: 2px solid green;
+        line-height: 100px;
+        text-align: center;
+      }
+      .parent {
+        min-height: 40vh;
+        min-width: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: start;
+        align-content: start;
+        gap: 1rem;
+      }
+      #input,
+      #submit {
+        display: inline-block;
+        height: 1.6rem;
+      }
+      .removedText,
+      .removedBox {
+        border: 2px solid salmon;
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box1" style="order: 0"><span>div1</span></div>
+      <div class="box2" style="order: 1"><span>div2</span></div>
+      <div class="box3" style="order: 2"><span>div3</span></div>
+      <div class="box4" style="order: 3"><span>div4</span></div>
+      <div class="box5" style="order: 4"><span>div5</span></div>
+      <div class="box6" style="order: 5"><span>div6</span></div>
+      <div class="box7" style="order: 6"><span>div7</span></div>
+      <div class="box8" style="order: 7"><span>div8</span></div>
+    </div>
+    <p>=> Click Box = Remove Text</p>
+    <p>=> Double Click Box = Remove Box</p>
+    <p class="removedText">Removed Text :-</p>
+    <p class="removedBox">Removed Text & Box :-</p>
+    <form>
+      <fieldset>
+        <legend>Add box/div (1 - 8)</legend>
+        <label
+          >Input :
+          <input type="text" id="input" />
+          <input type="submit" id="submit" />
+        </label>
+      </fieldset>
+    </form>
+    <p class="addDisplay"></p>
+  </body>
+  <script>
+    "use strict";
+    let parent = document.querySelector(".parent");
+    let textDisplyOut = document.querySelector(".removedText");
+    let boxDisplyOut = document.querySelector(".removedBox");
+    let addDisplay = document.querySelector(".addDisplay");
+    let input = document.querySelector("#input");
+    let submit = document.querySelector("#submit");
+    let removedText = [];
+    let removedBox = [];
+
+    function removeMessage() {
+      input.addEventListener("click", () => {
+        addDisplay.innerHTML = "";
+      });
+    }
+
+    function updateBox(input) {
+      let remBoxIndex = removedBox.indexOf(input);
+      if (remBoxIndex >= 0) {
+        let splicedBox = removedBox.splice(remBoxIndex, 1);
+        boxDisplyOut.innerText = `Removed Text & Box :- ${removedBox.join(
+          ", "
+        )}`;
+      }
+    }
+    function updateText(input) {
+      let inputValNo = input.split("")[3];
+      let inputValText = "div".concat(inputValNo);
+      let remTextIndex = removedText.indexOf(inputValText);
+      if (remTextIndex >= 0) {
+        let spliceText = removedText.splice(remTextIndex, 1);
+        textDisplyOut.innerText = `Removed Text :- ${removedText.join(", ")}`;
+      }
+    }
+    function insertBoxToParent(input) {
+      let inputValNo = input.split("")[3];
+      let inputValText = "div".concat(inputValNo);
+
+      let createElement = document.createElement("div");
+      createElement.setAttribute("class", input);
+      createElement.style.order = inputValNo - 1;
+      createElement.innerHTML = `<span>${inputValText}</span>`;
+      parent.appendChild(createElement);
+    }
+    function inputChkInsert(input) {
+      if (input.includes("box")) {
+        if (removedBox.includes(input)) {
+          updateBox(input);
+          updateText(input);
+          insertBoxToParent(input);
+        } else {
+          addDisplay.innerHTML = `<span>${input} Is Already Their</span>`;
+        }
+      }
+      if (input.includes("div")) {
+        if (removedText.includes(input)) {
+          let inputValNo = input.split("")[3];
+          let inputValBox = "box".concat(inputValNo);
+          if (!removedBox.includes(inputValBox)) {
+            updateText(input);
+            let targetBox = document.querySelector(`.${inputValBox}`);
+            targetBox.innerHTML = `<span>${input}</span>`;
+          } else {
+            addDisplay.innerHTML = `<span>Please Add => ${inputValBox}, To Get => ${input}</span>`;
+          }
+        } else {
+          addDisplay.innerHTML = `<span>${input} Is Already Their</span>`;
+        }
+      }
+    }
+
+    parent.addEventListener("click", (e) => {
+      let text = e.target.closest("span");
+      if (text !== null) {
+        removedText.push(text.innerText);
+        text.remove();
+        textDisplyOut.innerText = `Removed Text :- ${removedText.join(", ")}`;
+      }
+    });
+
+    parent.addEventListener("dblclick", (e) => {
+      let box = e.target.closest(".parent div");
+      console.log(box);
+      if (box.innerText !== "") {
+        const span = box.querySelector("span");
+        span.remove();
+        textDisplyOut.innerText = `Removed Text :- ${removedText.join(", ")}`;
+      }
+      if (box !== null) {
+        removedBox.push(box.className);
+        box.remove();
+        boxDisplyOut.innerText = `Removed Text & Box :- ${removedBox.join(
+          ", "
+        )}`;
+      }
+    });
+
+    removeMessage();
+
+    submit.addEventListener("click", (e) => {
+      e.preventDefault();
+      inputChkInsert(input.value);
+      input.value = "";
+    });
+  </script>
+</html>
