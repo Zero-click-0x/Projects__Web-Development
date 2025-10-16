@@ -3,7 +3,8 @@
 A fully responsive, multi-page restaurant website built with semantic HTML5, CSS3, and modern web development best practices. This project demonstrates proficiency in front-end web development fundamentals and user experience design.
 
 ## 🚀 Live Demo
-[View Live Site](https://bytemenot-glitch.github.io/Little-Taco-Shop/)
+
+[View Live Site](https://zero-click-0x.github.io/Projects__Web-Development/01_Little-Toco-Shop/)
 
 ## 📋 Project Overview
 
@@ -12,6 +13,7 @@ The Little Taco Shop is a complete restaurant website featuring a modern dark th
 ## ✨ Key Features
 
 ### 🎯 Core Functionality
+
 - **Multi-page Navigation**: Seamless navigation between 3 main pages
 - **Contact Form Integration**: Functional contact form with form validation
 - **Interactive Menu Display**: Structured pricing table with organized menu items
@@ -19,6 +21,7 @@ The Little Taco Shop is a complete restaurant website featuring a modern dark th
 - **Mobile-First Design**: Responsive layout optimized for all devices
 
 ### 🎨 Design & UX
+
 - **Modern Dark Theme**: Professional dark color scheme (#333 background)
 - **Consistent Branding**: Unified visual identity across all pages
 - **Accessibility Features**: Proper semantic HTML and ARIA compliance
@@ -28,11 +31,13 @@ The Little Taco Shop is a complete restaurant website featuring a modern dark th
 ## 🛠️ Technologies & Skills Demonstrated
 
 ### Frontend Technologies
+
 - **HTML5**: Semantic markup, modern HTML elements
 - **CSS3**: Custom styling, responsive design principles
 - **Vanilla JavaScript**: (Implicit in form handling)
 
 ### HTML5 Features Implemented
+
 - Semantic HTML elements (`<header>`, `<main>`, `<section>`, `<aside>`, `<figure>`)
 - Accessibility features (ARIA labels, alt text, proper heading hierarchy)
 - Form validation and modern input types
@@ -40,6 +45,7 @@ The Little Taco Shop is a complete restaurant website featuring a modern dark th
 - SEO optimization with meta tags
 
 ### CSS3 Techniques
+
 - Custom color schemes and typography
 - Responsive design patterns
 - CSS selectors and pseudo-classes
@@ -64,6 +70,7 @@ little-taco-shop/
 ## 🌟 Technical Highlights
 
 ### Advanced HTML Features
+
 - **Semantic Structure**: Proper use of HTML5 semantic elements
 - **Form Validation**: Built-in HTML5 form validation with required fields
 - **Accessibility Compliance**: Screen reader friendly with proper ARIA attributes
@@ -71,6 +78,7 @@ little-taco-shop/
 - **Performance Optimization**: Lazy loading and optimized image attributes
 
 ### Professional Development Practices
+
 - **Clean Code**: Well-organized, commented, and maintainable code
 - **Cross-page Navigation**: Consistent navigation with proper linking
 - **User Experience**: Intuitive site flow and information architecture
@@ -79,6 +87,7 @@ little-taco-shop/
 ## 🎯 Skills Showcased
 
 ### Technical Skills
+
 - ✅ **HTML5 Semantic Markup**
 - ✅ **CSS3 Styling & Layout**
 - ✅ **Responsive Web Design**
@@ -89,6 +98,7 @@ little-taco-shop/
 - ✅ **Performance Optimization**
 
 ### Soft Skills
+
 - ✅ **Project Planning & Structure**
 - ✅ **User Experience Design**
 - ✅ **Attention to Detail**
@@ -98,12 +108,14 @@ little-taco-shop/
 ## 🚀 Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/ByteMeNot-glitch/little-taco-shop.git
    cd little-taco-shop
    ```
 
 2. **Open in browser**
+
    ```bash
    # Open the main page
    open 09_Project_Home.html
@@ -126,11 +138,13 @@ little-taco-shop/
 ## 🎨 Design Decisions
 
 ### Color Scheme
+
 - **Primary**: Dark theme (#333) for modern, professional look
 - **Text**: White smoke for optimal readability
 - **Accent**: White (#fff) for navigation and borders
 
 ### Typography & Layout
+
 - Consistent heading hierarchy for accessibility
 - Proper spacing and padding for readability
 - Table design optimized for menu display

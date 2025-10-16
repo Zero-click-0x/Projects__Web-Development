@@ -1,7 +1,12 @@
 ## Summary
 
 **Newsletter Sign-up Form** - A responsive web application with email validation and success message functionality built using vanilla HTML, CSS, and JavaScript.
-***
+
+---
+
+## 🚀 Live Demo
+
+[View Live Site](https://zero-click-0x.github.io/Projects__Web-Development/03_Newsletter-SignIn-With-Success-Message/)
 
 # Newsletter Sign-up Form 📧
 
@@ -26,11 +31,13 @@ A modern, responsive newsletter subscription form with email validation and succ
 ## 🚀 Getting Started
 
 1. Clone the repository
+
 ```bash
 git clone <repository-url>
 ```
 
 2. Open `index.html` in your web browser
+
 ```bash
 open index.html
 ```
@@ -51,6 +58,7 @@ open index.html
 ## 🎨 Design Specifications
 
 ### Color Palette
+
 - **Red**: `hsl(4, 100%, 67%)`
 - **Blue-800**: `hsl(234, 29%, 20%)`
 - **Blue-700**: `hsl(235, 18%, 26%)`
@@ -58,21 +66,25 @@ open index.html
 - **White**: `hsl(0, 0%, 100%)`
 
 ### Responsive Breakpoints
+
 - **Mobile**: < 475px
 - **Desktop**: ≥ 475px
 
 ## 💡 Key Functionality
 
 ### Email Validation
+
 The form validates email addresses by checking if they end with `.com`
+
 ```javascript
 let check = input.split("").slice(-4).join("");
 if (check === ".com") {
-    // Show success message
+  // Show success message
 }
 ```
 
 ### Success Flow
+
 1. User enters email address
 2. Form validates the email format
 3. Newsletter section is hidden
