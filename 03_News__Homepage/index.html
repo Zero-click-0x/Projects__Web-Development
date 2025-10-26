@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/static/Inter-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/static/Inter-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <title>News homepage</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <!--                  Header Start Here                          -->
+    <header class="header">
+      <nav class="navBar">
+        <div class="logo">W.</div>
+        
+        <button class="hamberger offscreen"><img src="./assets/images/icon-menu.svg" width="40" height="17"></button>
+        <button class="cross offscreen"><img src="./assets/images/icon-menu-close.svg" width="32" height="31"></button>
+
+        <ul class="navBar__list">
+          <li>
+            <a class="navBar__Items" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="navBar__Items" href="#new">New</a>
+          </li>
+          <li>
+            <a class="navBar__Items" href="#popular">Popular</a>
+          </li>
+          <li>
+            <a class="navBar__Items" href="#trending">Trending</a>
+          </li>
+          <li>
+            <a class="navBar__Items" href="#categories">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--                  Hero Start Here                          -->
+    <hero class="hero__desktop">
+      <figure>
+        <img
+          src="./assets/images/image-web-3-desktop.jpg"
+          width="1460"
+          height="600"
+          alt="Web-3-Image"
+        />
+        <figcaption class="offscreen">Hero-Desktop</figcaption>
+      </figure>
+    </hero>
+    <hero class="hero__mobile">
+      <figure>
+        <img
+          src="./assets/images/image-web-3-mobile.jpg"
+          width="686"
+          height="600"
+          alt="Web-3-Image"
+        />
+        <figcaption class="offscreen">Hero-Mobile</figcaption>
+      </figure>
+    </hero>
+
+    <!--                  Future Start Here                          -->
+    <section class="future">
+      <div class="future__left">The Bright Future of Web 3.0?</div>
+      <div class="future__right">
+        <p>
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <button>Read more</button>
+      </div>
+    </section>
+
+    <!--                  Aside Start Here                          -->
+    <section class="aside__right">
+      <div class="new">New</div>
+      <h3>Hydrogen VS Electric Cars</h3>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <div class="divider"></div>
+
+      <h3>The Downsides of AI Artistry</h3>
+      <p>
+        What are the possible adverse effects of on-demand AI image generation?
+      </p>
+      <div class="divider"></div>
+
+      <h3>Is VC Funding Drying Up?</h3>
+      <p>
+        Private funding by VC firms is down 50% YOY. We take a look at what that
+        means.
+      </p>
+    </section>
+
+    <!--                More-topics Start Here                          -->
+    <section class="more__topics">
+      <div class="subsection__1 more__sub">
+        <div class="more__Sub__left">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            width="200"
+            height="254"
+          />
+        </div>
+        <div class="more__sub__right">
+          <h2>01</h2>
+          <div>Reviving Retro PCs</div>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="subsection__2 more__sub">
+        <div class="more__Sub__left">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            width="200"
+            height="254"
+          />
+        </div>
+        <div class="more__sub__right">
+          <h2>02</h2>
+          <div>Top 10 Laptops of 2022</div>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="subsection__3 more__sub">
+        <div class="more__Sub__left">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            width="200"
+            height="254"
+          />
+        </div>
+        <div class="more__sub__right">
+          <h2>03</h2>
+          <div>The Growth of Gaming</div>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--                  Footer Start Here                          -->
+    <div class="attribution center">
+      Coded by <a href="#">Nope</a>. Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.
+    </div>
+  </body>
+</html>
