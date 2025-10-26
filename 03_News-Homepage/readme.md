@@ -7,7 +7,7 @@ The layout adapts seamlessly between desktop and mobile, featuring a hero articl
 
 ## 🚀 Live Demo
 
-[View Live Site](https://zero-click-0x.github.io/Projects__Web-Development/03_News-Homepage/)
+[View Live Site](https://zero-click-0x.github.io/Projects__Web-Development/03_News__Homepage/)
 
 ---
 
