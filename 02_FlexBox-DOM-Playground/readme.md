@@ -6,7 +6,7 @@ A bite-sized vanilla-JS demo that shows how flexbox and the DOM can be manipulat
 
 ## 🚀 Live Demo
 
-[View Live Site](https://zero-click-0x.github.io/Projects__Web-Development/02_FlexBox-DOM-Playground/)
+[View Live Site](https://zero-click-0x.github.io/Projects_Web-Development/02_FlexBox-DOM-Playground/)
 
 ## 🚀 What it does
 

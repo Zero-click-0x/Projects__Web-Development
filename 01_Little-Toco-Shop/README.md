@@ -4,7 +4,7 @@ A fully responsive, multi-page restaurant website built with semantic HTML5, CSS
 
 ## 🚀 Live Demo
 
-[View Live Site](https://zero-click-0x.github.io/Projects__Web-Development/01_Little-Toco-Shop/)
+[View Live Site](https://zero-click-0x.github.io/Projects_Web-Development/01_Little-Toco-Shop/)
 
 ## 📋 Project Overview
 
